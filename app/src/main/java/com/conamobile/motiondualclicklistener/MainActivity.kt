@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initViews() {
-        val clickable = ClickableMotionLayout(this)
         binding.button.setOnClickListener {
             Toast.makeText(this, "click", Toast.LENGTH_SHORT).show()
         }
