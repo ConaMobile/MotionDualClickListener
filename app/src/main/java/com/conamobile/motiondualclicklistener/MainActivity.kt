@@ -12,12 +12,14 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-        initViews()
+        click()
     }
 
-    private fun initViews() {
+    private fun click() {
         binding.button.setOnClickListener {
+            binding.motion.transitionToEnd()
             Toast.makeText(this, "click", Toast.LENGTH_SHORT).show()
         }
     }
+
 }
